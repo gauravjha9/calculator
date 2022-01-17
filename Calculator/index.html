@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="calculator">
+
+            <div id="result">
+                <input id="output" type="text">
+            </div>
+
+            <div id="keyboard">
+
+                <button id="clear" class="operator" onclick="c()">C</button>
+                <button id="backspace" class="operator" onclick="bkspc()">B</button>
+                <button class="operator" onclick="ins('%')">%</button>
+                <button class="operator" onclick="ins('/')">/</button>
+                <button class="number" onclick="ins(7)">7</button>
+                <button class="number" onclick="ins(8)">8</button>
+                <button class="number" onclick="ins(9)">9</button>
+                <button class="operator" onclick="ins('*')">*</button>
+                <button class="number" onclick="ins(4)">4</button>
+                <button class="number" onclick="ins(5)">5</button>
+                <button class="number" onclick="ins(6)">6</button>
+                <button class="operator" onclick="ins('-')">-</button>
+                <button class="number" onclick="ins(1)">1</button>
+                <button class="number" onclick="ins(2)">2</button>
+                <button class="number" onclick="ins(3)">3</button>
+                <button class="operator" onclick="ins('+')" id="plus">+</button>
+                <button class="number" onclick="ins('.')" >.</button>
+                <button class="number" onclick="ins(0)">0</button>
+                <button class="operator" onclick="equal()" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="JavaScript/index.js"></script>
+
+</html>
